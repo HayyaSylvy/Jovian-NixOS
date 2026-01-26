@@ -24,6 +24,8 @@ A set of packages and configurations for running NixOS on the [Steam Deck](https
 
 This repo is also useful for obtaining a Steam Deck-like experience on other `x86_64` devices.
 
+PS: This is a personal fork merging the experimental commits to add support for declarative Decky Loader plugin configuration. I'm pretty new and this is just a personal fork, please don't expect much :P
+
 </div>
 
 <div class="for-github -unneeded">
