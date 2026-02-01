@@ -2,9 +2,9 @@
   {
     "xr_gaming" = buildDeckyPlugin {
       name = "XR Gaming";
-      version = "1.0.2";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/714b7264b0ef6d7f3b663f20601920d365c58d0e514a776955440c6c11361dfb.zip";
-      download_hash = "1yqx6q8nq324amlpfjji1s6warfk40cn081zcqxpyvggn1j74jvi";
+      version = "1.4.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/42c41e14bb4c7a6f0c7eb9d1110c3ddc21c0419f58c1e2f2a5fe5ae1f3f05221.zip";
+      download_hash = "08ajy3ry2npylprf5haqkx0w08fw7l613ldrgq66yyjcpca1xi22";
       meta = with lib;
       {
         description = "Virtual display, VR-Lite, and Follow modes for supported XR glasses";
@@ -19,6 +19,18 @@
           "xr"
           "xreal"
         ];
+        platforms = platforms.all;
+      };
+    };
+    "example_plugin" = buildDeckyPlugin {
+      name = "Example Plugin";
+      version = "0.0.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/0a3f5966e38a745b29ca4ea456ebda518a20fb06075d0cc2990fcc80f58763dc.zip";
+      download_hash = "1p33hzsq1k0gk710qp870vxj12jivbmmd92fr8lmnx4awdk5jgqa";
+      meta = with lib;
+      {
+        description = "Decky example plugin.";
+        decky_tags = [ "root" "template" ];
         platforms = platforms.all;
       };
     };
@@ -72,9 +84,9 @@
     };
     "pause_games" = buildDeckyPlugin {
       name = "Pause Games";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/b704ef5eb477415eeaab90c7e1d4cda524b061be211e8ec4885a60b995fd5503.zip";
-      download_hash = "00smznavjq2si328w7i1prhv0955rpaf3iwhmgm5whbpnigfy15p";
+      version = "1.0.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4816c0fd33e71fcea82dbdcf2d300f949f4f3a6ba6a179ce8c7aefff64115715.zip";
+      download_hash = "05ap25jgzvvsik77k8d6dcx4z7wl1wq2vkxx5nlcw7z76gyw05j8";
       meta = with lib;
       {
         description = "Pause/Resume games to redirect resources and even play/stop apps that don't natively have an immediate option to do so.";
@@ -94,9 +106,9 @@
     };
     "protondb_badges" = buildDeckyPlugin {
       name = "ProtonDB Badges";
-      version = "1.1.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/3894048d0d9b35342c85d9f50e9e5e4edc00b65e9dfe61d47ec5cf97bfd28da7.zip";
-      download_hash = "19wdsazrgky5gva63zlxbsv01p2fbsg0xxfrhln38dcv1n6h951q";
+      version = "1.2.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/54fadb8faec26bb8667a6fd7c61167bc4e5584414f142ae455c74a381ee23891.zip";
+      download_hash = "149qw8g3hjn7apj2l52g8625akmwcw8wdmvgg9kbhsy2ms7xpyjl";
       meta = with lib;
       {
         description = "Display tappable ProtonDB badges on your game pages";
@@ -106,9 +118,9 @@
     };
     "audio_loader" = buildDeckyPlugin {
       name = "Audio Loader";
-      version = "1.6.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/0c104f697dc99d54601446495964b407d6b61786e0b029117db3a597d63eeb61.zip";
-      download_hash = "0qgb7vb9g9dkgl8jkc70hqbvdmh7nij5jja62ih597f9gmlly40c";
+      version = "1.6.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/fd5a090c2e2cd4da6723d7bd08937ab31b9f8d4663510431713da531343e303f.zip";
+      download_hash = "0grh7qs3399xf4qh8lb38s6ry6xkga9higfp4dkxmm1c5q60jnpx";
       meta = with lib;
       {
         description = "Replaces Steam UI sound effects with custom sounds and adds music to menus.";
@@ -197,9 +209,9 @@
     };
     "hltb_for_deck" = buildDeckyPlugin {
       name = "HLTB for Deck";
-      version = "2.0.4";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d9ef0a95bc91c110ed94198464e4968f3eec7e16f6eedab8ed75b4294993a8e9.zip";
-      download_hash = "1sd8jd4jkd3mxnwdmvpn2rzfqglgjvj6910rjkni1hcipjahmvyr";
+      version = "2.0.6";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/dd56dd2f19be3df6541ab2c0fdcad099336d0740d57db9deb449c702b21f8113.zip";
+      download_hash = "04w13yr05is9nkgbjzfm803nscwrs35gvh5j39agcgdy34pxsmnx";
       meta = with lib;
       {
         description = "A plugin to show you game lengths according to How Long To Beat";
@@ -209,9 +221,9 @@
     };
     "autosuspend" = buildDeckyPlugin {
       name = "AutoSuspend";
-      version = "2.1.0-1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1e44054bc201b51e36bb713c786ee339c8fb4c4098479f25a1c7ddd6e6840244.zip";
-      download_hash = "0i02hkkddpf7l4jryiwq816gpj1rwdp7hg3ipcv1xd81q95hai0y";
+      version = "2.2.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/20ceb9aa5327226326531d947e4a7a5318ba78b73f503266996a81877cffa536.zip";
+      download_hash = "0dm5zxy8g0bak5k34l1znxwbl62kg957x50xack668i7afmbkki0";
       meta = with lib;
       {
         description = "Automatically suspend on low power.";
@@ -221,9 +233,9 @@
     };
     "emuchievements" = buildDeckyPlugin {
       name = "Emuchievements";
-      version = "2.0.3";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d9d43e9d0720615d109746a658fbbfd4b0d69e69b7444310e25ad62e415f7980.zip";
-      download_hash = "103rbx0jxmjsw8846i5pd6gddc6lpzxmi9j6jw85sq900yfkxm6r";
+      version = "2.0.5";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/98dcb443e81b9f9011cfe77c69eb659869c8e2df2df8b0a443df66cbfc2f5a89.zip";
+      download_hash = "12as5zycnrnz8fjb1y1dvzichscqcpmnjz77rw8r17qvx11v9p4q";
       meta = with lib;
       {
         description = "Plugin for viewing RetroAchievements progress. Part of the EmuDeck Project";
@@ -245,9 +257,9 @@
     };
     "autoflatpaks" = buildDeckyPlugin {
       name = "AutoFlatpaks";
-      version = "1.6.7";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/b2f447ac727a0591527b78e98d9e246dd1a8e0bced7537841fd3f858538288de.zip";
-      download_hash = "1pl8h99miy6k3y23fxgdpkhailbd4jg8vsbqgd9921bsfan4gx5j";
+      version = "1.6.8";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/344fce82cfb4800caccb4d6c0ec46e1ad6c9594a622d5baa0bb31286baf2d1a5.zip";
+      download_hash = "19fiyax8c4mk1fm5nbb299cwkmhsdv20wv2drfn0r05lry1cwkrl";
       meta = with lib;
       {
         description = "A plugin to manage, notify, and automatically update flatpaks on your steamdeck console";
@@ -263,9 +275,9 @@
     };
     "moondeck" = buildDeckyPlugin {
       name = "MoonDeck";
-      version = "1.9.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/563ef7acb4c72764b5e3a5a620b109e2cb0475ed94d54f8ff5c77e5c77dbedb6.zip";
-      download_hash = "1dpdvdvmqzn7yn7lzmclxmsh9jz216qj19m5wfsn89y7njngfgjn";
+      version = "1.11.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1013f416c1e72e967e781383defdeff0e56d4d1b75282edd75874fcce1a740af.zip";
+      download_hash = "1bs0lzhwqkw7fpfjwa3m3d6nvrghxzyxx0qkg1z9cbp7q4bg84qh";
       meta = with lib;
       {
         description = "MoonDeck lets you play any of your Steam games via Moonlight without needing to add them to Sunshine first, providing a similar experience to GeForce GameStream or Steam Remote Play.";
@@ -275,21 +287,21 @@
     };
     "steamgriddb" = buildDeckyPlugin {
       name = "SteamGridDB";
-      version = "1.5.1-loaderv2";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/b84f0a3f83b6e5d7cbc0ba9360bde33cfb400cf5f2a5d5c38f44a488e2c91a57.zip";
-      download_hash = "0mqsr7i8i924iz1xb9gjyl641yrwwfyn14xsq35xgrdnhczhlkxq";
+      version = "1.7.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f18279dc95b6ee003a7f53a84e8f7eee3a8fdd042ef67e5160c91c31ad12659f.zip";
+      download_hash = "17v52ank2769c18pxxif0kfqyfpfgs7lxa2kgwx01vmnjpf7k0pi";
       meta = with lib;
       {
-        description = "Customize your library with user-submitted images or your local files, and apply other tweaks like changing the shape of the recently played game capsule, making them square, and more!";
+        description = "Customize your library with user-submitted images or local files, and other tweaks like square capsules, changing the recently played size, and more!";
         decky_tags = [ "artwork" "sgdb" ];
         platforms = platforms.all;
       };
     };
     "discord_status" = buildDeckyPlugin {
       name = "Discord Status";
-      version = "1.4.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/46f2d487ed329185712b2d51e51ada89254b371cbc4b82e051edbcd5bef7c62a.zip";
-      download_hash = "0an6yyzdbg7da7h84jxw3hvln9c9v8dfal9d5dqqb49jxn3x9wj6";
+      version = "1.5.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/00a45dd919abb6e050685e1e408ce8023b9c4a09d6e91ba528d50aed2a63bf45.zip";
+      download_hash = "0idzccmfs2nm52jipsfn1559qfq2x26407jyd18f1dmb37cmv900";
       meta = with lib;
       {
         description = "Displays current Steam Deck game in Discord";
@@ -342,9 +354,9 @@
     };
     "deckmtp" = buildDeckyPlugin {
       name = "DeckMTP";
-      version = "1.0.4";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ad0ec3f3e11bc9daaf5e1645d1c9cb2ca7661728670c45bb51306e9723a2a846.zip";
-      download_hash = "0im8l8irfviha6xla33750bnd9rcrg4x2i8nbspxmj8vw7rw63md";
+      version = "1.0.5";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a60cbe438226109a21a3eabf881a73460bfb9d70871b70a1508cfa17e3fed496.zip";
+      download_hash = "15nlzviigylca2hp06w7f2fzn2s6fcd8igzalchrl416h91vw356";
       meta = with lib;
       {
         description = "A plugin that allows your Steam Deck to transfer files to your PC via MTP and USB";
@@ -378,9 +390,9 @@
     };
     "quick_launch" = buildDeckyPlugin {
       name = "Quick Launch";
-      version = "1.2.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/150e77907d8891f577ca9ee267cdf7b962087b815b5ecec9c4997e9f32e0af5e.zip";
-      download_hash = "0pmgw0r9yzlrqk4wwpjvh5xhhqmryz6ngqlyr9vzb4c8gn87f3hm";
+      version = "1.2.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/709746bfe2a7e19bda54b4de0b3f4a311053de10fa58aa070d421dbf92317ede.zip";
+      download_hash = "1pky669by7a21l3sln7s23g5641i98zhppmlakd9pqd7wazld5vh";
       meta = with lib;
       {
         description = "Quickly Launch Non-Steam-Apps from the Quick Access menu without adding them as Shortcuts, or add them to the Steam Library.";
@@ -425,9 +437,9 @@
     };
     "game_theme_music" = buildDeckyPlugin {
       name = "Game Theme Music";
-      version = "1.7.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/2a9fced36b3d34bd4bd4bd7963787b486bf39137f9d444632140ab1fe1872de8.zip";
-      download_hash = "1s1dhzhizas045il9m7r6y8z6ss8gdw66ydxsi5vsd1xdg9wx7ra";
+      version = "1.7.1-1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/9ce293ab4db212c03c6b96dfbc5e4d92e874d33387463f53223773921f75a80e.zip";
+      download_hash = "03m8flgr4wrp499kyil76g9p9s4j9mgbrpwndcyc04mj9nmr7qlw";
       meta = with lib;
       {
         description = "Play theme songs on your game pages";
@@ -449,9 +461,9 @@
     };
     "mangopeel" = buildDeckyPlugin {
       name = "MangoPeel";
-      version = "0.0.5-1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/c27d0bb14d803595599d9ad23309feccab827b74cd460ce51fc28a51edb16e44.zip";
-      download_hash = "0i3fn7nm32n23zjhqindfixq5ayczq4k7llskmcradc09nqhnzf2";
+      version = "0.0.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/71dc21ce5f9f4ee0573bd927e9b444d45dc47327888ca78ed063c7bcc57bfac1.zip";
+      download_hash = "1hgsgg2vriv3s27ag3484xrw8pfl8jsfj9yr7dby0klzbz723p3i";
       meta = with lib;
       {
         description = "A decky plugin for custom performance monitoring style.";
@@ -473,9 +485,9 @@
     };
     "web_browser" = buildDeckyPlugin {
       name = "Web Browser";
-      version = "1.4.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/dce6565123bcde7f43bda7995876c11bb81cc56e38268581c66473b5ec3eb8bd.zip";
-      download_hash = "1gdq7vnbawv4qs0qa9iqdv2irf0vq5v5i6d7pm1pzpmw4d8mdrnw";
+      version = "1.4.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1192864fddc5d72550346b8dff02c21d71f0c40a06ac41c4e67bb6220d267f9d.zip";
+      download_hash = "17bz4q6j5dkvwv243b061b2g0w8xq81gz3bb6i82bmy5vm7qd4hi";
       meta = with lib;
       {
         description = "A web browser with multiple features including tabs!, limited gamepad support, favorites and a multifunction search/url bar.";
@@ -485,9 +497,9 @@
     };
     "deckyfileserver" = buildDeckyPlugin {
       name = "DeckyFileServer";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/3044fc8d8901ae048bd1242207e9cdb0c3c0e02696cbe97055e8acd762eab2aa.zip";
-      download_hash = "1amjx9idgb78amqfkjwn4vhc1hxhrplhf8i4s65h9bh1i66zqi1h";
+      version = "1.1.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/81c2a71d89e660ec56df8ac66569e813542aa91bf3c013ff13fea2ed058639e3.zip";
+      download_hash = "1qrrhq2yv8py2gzi7h7k3fljlm0kx1lnbilavxbfqq76i4fsghl1";
       meta = with lib;
       {
         description = "Plugin that lets you turn on a web server to browse and download files from your Steam Deck.";
@@ -497,9 +509,9 @@
     };
     "tabmaster" = buildDeckyPlugin {
       name = "TabMaster";
-      version = "2.8.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/eb74a08f8aa6f89808740424ce0f12670409ce9c15776cd623d3b4e4c9a8f52b.zip";
-      download_hash = "0azmm34y9d6k4gb6qxqmkk70j137287ww904fh49iy56ia7s0x7b";
+      version = "2.13.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/462413519067a044d72d2d259facf6c9addcbf9d14d02c65a2beb8e7746f7015.zip";
+      download_hash = "05bhdxsfgf5yl9jjrl0lknzxrbf9ysn9y99d5pbl9837j18i6926";
       meta = with lib;
       {
         description = "Gives you full control over your Steam library! Support for customizing, adding, and hiding Library Tabs.";
@@ -521,9 +533,9 @@
     };
     "free_loader" = buildDeckyPlugin {
       name = "Free Loader";
-      version = "1.3.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ce030b03c9638f990cf53657f1fd0ac95d1e1ad70060ac76752f26789d65f639.zip";
-      download_hash = "0fgncnfph9igfmvaqq00swd1wpf91byz2mrnyl69k3v3r41hn0yf";
+      version = "1.5.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/2c960746e8827b542a500eeb7f12e851335deabd0d3825ae5b71e7009b5ac5a9.zip";
+      download_hash = "1af5badh1rvibfp2af0dppm5scsix097zsqfa0m58yw2x130g5ic";
       meta = with lib;
       {
         description = "Notifications for free games on Steam, GOG, and Epic Games!";
@@ -545,12 +557,12 @@
     };
     "syncthing" = buildDeckyPlugin {
       name = "Syncthing";
-      version = "0.2.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/49c59574b51d2b694c42e00ab8c52b770f0d2f7aaca95dd9ba2c736e43f0280b.zip";
-      download_hash = "02r8y11nwwrcpbcmvadcg8phs3vp5g2vh2p08966jaqxnms9bia9";
+      version = "0.2.6";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1424128571b59536909095146959acba3a36899a69e3d2d790f630f2c7bc607e.zip";
+      download_hash = "0zk0pk3z4c7nj3bx5qv9ka4kcfmsmicnj54mj283d5dmf62i490l";
       meta = with lib;
       {
-        description = "Plugin for managing Syncthing to synchronize files with other devices. Not officially affiliated with the Syncthing project. The 'Syncthing GTK' flatpak must be installed.";
+        description = "Plugin for managing Syncthing to synchronize files with other devices. Not officially affiliated with the Syncthing project.";
         decky_tags = [
           "backup"
           "cloud"
@@ -564,24 +576,24 @@
     };
     "decky_terminal" = buildDeckyPlugin {
       name = "Decky Terminal";
-      version = "0.4.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/2e959bf8593ad684390e2a73c43691fe75cd5f1614f022c3cad4f5109840170b.zip";
-      download_hash = "02qp82c11xflrb1j5w0l2rgwsxgyj4vc8wra1qwq9misb7w9p59f";
+      version = "0.5.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/7bd8765ca57663a24178b05687acb52c3723518ac9eac1c14419a87904c0a872.zip";
+      download_hash = "0wm8q027ka0r8k0w3sn9i98j6drcnnn8fmmhg10s4qvnlmf7dn3v";
       meta = with lib;
       {
-        description = "A Missing Terminal plugin that turns your Steam Deck into Portable Linux Battlestation.";
+        description = "Your terminal is going places. The decky plugin that adds terminal emulator plugin for \"game mode\"";
         decky_tags = [ "terminal" ];
         platforms = platforms.all;
       };
     };
     "playtime" = buildDeckyPlugin {
       name = "PlayTime";
-      version = "2.0.9";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a1b126a686bdd610fd8dd527592c81dd7f1a3c4da3071733b32cc2f48f74d8f0.zip";
-      download_hash = "1w6qfj7z9hicncrif1x39ly1lzyxh4n5j9ymipyi1mmxhsk2dcd1";
+      version = "3.1.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e13e6bdb3a0908440f7646d17601673a5122ab194358cf448a52a70babdf34a9.zip";
+      download_hash = "1a9lvymhp9sji92cyn2336mj4l9scw0pdla6fq7l82097bdnngp1";
       meta = with lib;
       {
-        description = "Tracks time for Steam and non-Steam games with reports and charts";
+        description = "Track time you spend gaming — whether it's Steam titles or non-Steam games. Daily, weekly, and all-time stats.";
         decky_tags = [ "playtime" "time-tracking" "utility" ];
         platforms = platforms.all;
       };
@@ -600,9 +612,9 @@
     };
     "wine_cellar" = buildDeckyPlugin {
       name = "Wine Cellar";
-      version = "0.1.6";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a400c89e853117e32e2fba77ef1b09d8f3e9e9d073b9af38af7c73ed525cac6d.zip";
-      download_hash = "0vdcbi9fswvwmwwazfbks3lykwyq14dyyxxs5wpf65rihngch054";
+      version = "0.1.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/30569b3bceb91f8eddc58b745c3eb0623b3f68868d0f3e95db3cd473c31da740.zip";
+      download_hash = "0h573p1p7m1wvfakw3wdhrl3yfv2n0z5qx4bqpfqw7xrrqxrnmih";
       meta = with lib;
       {
         description = "A decky plugin to manage Steam Play compatibility tools";
@@ -612,9 +624,9 @@
     };
     "microsdeck" = buildDeckyPlugin {
       name = "MicroSDeck";
-      version = "0.10.11";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/49efe0879df61e65e08b1c51ddb0f8aed81755f72ad25fd0c125ca21d3936a00.zip";
-      download_hash = "003ajg9j3ji5q785zliayxaign5fz2qdsl8wigh6a7pnkn3y1vs9";
+      version = "0.11.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/64987f89970701902f4eaf403ea6d74145ed69f79b9259e3c53aabacdf0aa676.zip";
+      download_hash = "0xm61bgsrarsqpimk4lvyxlysia1syk3wh5g9qpr0087jy4pz634";
       meta = with lib;
       {
         description = "A plugin to manage MicroSD cards.";
@@ -672,21 +684,21 @@
     };
     "cheatdeck" = buildDeckyPlugin {
       name = "CheatDeck";
-      version = "0.4.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/10cef9bfbf87516f614f0b3c6ab5c7bc1c23e011b6ebb81517d33e806e1def8d.zip";
-      download_hash = "13gg3mp80gnk2wavisxn27h2675wqysnlg0b9xhnylc7pyzzkkhh";
+      version = "1.1.6";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/6dfe1f821b0cfe2a61c95e49efd6cb2587d79ff3d1e101e14fa80c12c7f6d89f.zip";
+      download_hash = "17yqyv3i43589zhh3qfiyfgxg1r5rgbfyjayr5hjmzhc3f11zzkd";
       meta = with lib;
       {
-        description = "Launch games with cheat or trainer and manage your launch options.";
+        description = "A launch options manager allows you to run games with cheats and trainers.";
         decky_tags = [ "cheat" "trainer" ];
         platforms = platforms.all;
       };
     };
     "bt_wake_control" = buildDeckyPlugin {
       name = "BT Wake Control";
-      version = "1.1.2";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a015832b6d476666b09536325be23ae3a9caeaeaa0d130795d190ec91a5ac789.zip";
-      download_hash = "12f7b8dcj3hrbmwk1ld0xbmcmag37bi5ncinjnq6crj7dlmq65d0";
+      version = "1.2.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/baed8ba21589fec8cbeff6c31a83f010664ea3bbeac3d8e71d64e9a9f63fd346.zip";
+      download_hash = "0ink7zvaksb43pkxihzapfilwrhhy21imhznxz5wizl92ni8pvds";
       meta = with lib;
       {
         description = "Allows to selectively disable and/or enable Wake-on-Bluetooth capabilities for your Bluetooth devices.";
@@ -696,9 +708,9 @@
     };
     "brightness_bar" = buildDeckyPlugin {
       name = "Brightness Bar";
-      version = "1.0.3";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1f3cefe2d4c75e1042170e6500e38f44a0b5668e183abc5490cdd0ec3910500e.zip";
-      download_hash = "03jh20wyrl6dj1abqfhqirkbb824izih0r8f2x110pn7skifyg0z";
+      version = "1.0.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d7aaf6481a24c32c847aa1cd64cf23ba6fe73c5dc166587a2303494a42ae0486.zip";
+      download_hash = "11h4mr14lj834dx5hrn1blyffvxs4g7n9kd1ga22rhr4394gdanp";
       meta = with lib;
       {
         description = "Displays a customizable brightness bar when the brightness is changed with 'STEAM/QAM + LS up/down' shortcuts.";
@@ -708,9 +720,9 @@
     };
     "decky_notifications" = buildDeckyPlugin {
       name = "Decky Notifications";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/285ec32de8f18c4d5e614fc5870038cb9754f2d75cba987e5c966846b0c0aa19.zip";
-      download_hash = "06daq2q4cs4nbiz9ifjwszr595yb7008giagc5g4v37ix0nw6pi8";
+      version = "1.0.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/3b22dc337209615f91da566ceb968793dc163b2e509de8535fb5d0fc55817312.zip";
+      download_hash = "04kkh5azrl5mbx9yi7ah5qxidp4khybfnv2nva8myq89f8rxq8iv";
       meta = with lib;
       {
         description = "Receive notifications from smartphone using KDE Connect Protocol";
@@ -720,9 +732,9 @@
     };
     "magicblack" = buildDeckyPlugin {
       name = "MagicBlack";
-      version = "1.0.2";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/fcdd8dcce7d07632cd3613f61ad37d4591601f073ebbbaca5eb052c3b40b1d86.zip";
-      download_hash = "11hx1fsc6lmhbv5bmfry0wgn14a5gp9imxhk6v6k4xnhwz68vpgw";
+      version = "2.0.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/597cac32892c34bc6de41282052b5e83f36bf58caf3cc7dd5cbfc8dd1328574e.zip";
+      download_hash = "0kjp509xvj5zbkfwfg5giksnpww3bqmhb0hjwinvqd1ci4raqz2r";
       meta = with lib;
       {
         description = "Overlays the screen with black color, emulating the screen being turned off on the Steam Deck OLED.";
@@ -732,9 +744,9 @@
     };
     "isthereanydeal_for_deck" = buildDeckyPlugin {
       name = "IsThereAnyDeal for Deck";
-      version = "1.0.3";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/6c0926ae7f1457afe45b1bd4f02599d5d677a5562142d73dc5e5161b859ae9df.zip";
-      download_hash = "1pz9ka2in5p5qlyxfhi1asjpgmnmk4jz1m0vbgjaymqlgyp2c2bc";
+      version = "1.1.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/18e133b2e6203f16fd1ee2ed83b5a90bad34491515bef7ec1c82d525f0bfadef.zip";
+      download_hash = "1vxdpzq2bmc23knggghm2m4k9b8bm6sq7vg23vyicgr0wsr37q8q";
       meta = with lib;
       {
         description = "Shows IsThereAnyDeal data on a game's store page";
@@ -744,21 +756,21 @@
     };
     "magicpods" = buildDeckyPlugin {
       name = "MagicPods";
-      version = "1.0.11";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/cc61ab49ee7f8f3f7b060059bdb8d95154eda06b793e11797ab719d503a3754e.zip";
-      download_hash = "0kkmlc1xa6dpg9wi2gkrdfhfsm2iv6wbsn800rxkz3vzxr4snqfc";
+      version = "2.0.10";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/8d517d2509d8e942ec295c3ec4dcbf8cb07f8783147f6724634898e828e6515c.zip";
+      download_hash = "0p2iwqlfi628ccj6fzqlhf3pzc4cpzfc8gjw57n45sfq14jpslcd";
       meta = with lib;
       {
-        description = "Monitor the battery level of your AirPods and Beats. Easily switch between noise cancellation modes and enjoy the magic.";
+        description = "Monitor the battery level of your AirPods, Beats and Galaxy Buds. Easily switch between noise cancellation modes and enjoy the magic.";
         decky_tags = [ "airpods" "battery" "beats" "bluetooth" "headphones" ];
         platforms = platforms.all;
       };
     };
     "junk-store" = buildDeckyPlugin {
       name = "Junk-Store";
-      version = "1.1.8";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/596c09481a48d78926ddd8a1b117ed8158c61b3345741327eb18a1079f8a1307.zip";
-      download_hash = "01qkiaghg88qxcki6x256cdwcn41xlbv38fqvlk8kms83940jv2r";
+      version = "1.1.13";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f7ad2a0103c85bf308929b2e96ec9aeeb0d76bcc6ae97eb1e4b5f31ffba0cbb1.zip";
+      download_hash = "1cfbl3xizwxmwjqpxsbarimxgc7fkbn9cblvj84g6ny80c0jmbgp";
       meta = with lib;
       {
         description = "Transform your gaming experience with Junk-Store - the ultimate solution for seamlessly integrating non-Steam games into your Steam Deck library. Say goodbye to clunky work arounds and hello to a world of endless gaming possibilities. Get ready to elevate your gaming to the next level with Junk-Store!";
@@ -788,9 +800,9 @@
     };
     "screensaver" = buildDeckyPlugin {
       name = "ScreenSaver";
-      version = "1.1.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/03dae610f1959b5040907af24155f25fc94c3d6f273a30ecb93fc2bec25a4581.zip";
-      download_hash = "10a5bb1bxhizp7n30fi7dwylrjazy9al3wksj10516wmy48fdnh3";
+      version = "1.1.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/5e61f20d53e244c55a0375d6299b16cdb9701c222519c7fecd726f1926091822.zip";
+      download_hash = "08hq14k1jvvjrpzcf69548f71ffd2sdjkmkm0ddcai72ac6z4qay";
       meta = with lib;
       {
         description = "Inhibit screensaver during video playback.";
@@ -853,9 +865,9 @@
     };
     "crosshair" = buildDeckyPlugin {
       name = "Crosshair";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/49f3afe815e5527d4ff12e2278a5652c6a2efaa342f468fd0c2bb7b3039d1eb8.zip";
-      download_hash = "1f0ykl1v7drb1kynix22lgx2wsiccnjph8ify57pslp52plazws9";
+      version = "1.1.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/19544af369622dac243874de99bc30485d1d8a27241fb05ca299b2d1dd39b2e0.zip";
+      download_hash = "1q5j77fx3clrl9fb07r44y51spa862y9kpkl70jaqbb2d7rllm0r";
       meta = with lib;
       {
         description = "Repurpose the performance overlay into a customizable crosshair.";
@@ -865,9 +877,9 @@
     };
     "deck_settings" = buildDeckyPlugin {
       name = "Deck Settings";
-      version = "1.1.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/865e094fc4b66465cae73930b64cd2df724e722f072a427e9fb821b5912da234.zip";
-      download_hash = "0d525n8va8dqkxz44ah75xr4wwnzs96bcc1rwz56ar5nqi7hjpl6";
+      version = "1.2.6";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/23c2a933a6883e2622f0184c33a76ce4a4e88c0a7dcd730f9bab71b8c3702132.zip";
+      download_hash = "0ci1f31vhwdbkc7p7kbx1a6fi974djkk6k0qy0i2cgl8lqrskhi3";
       meta = with lib;
       {
         description = "Fetch and display community-driven game compatibility, settings, and configuration reports.";
@@ -920,12 +932,12 @@
     };
     "decky-framegen" = buildDeckyPlugin {
       name = "Decky-Framegen";
-      version = "0.9.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/163a42f85f95abd7a51350075017ef53e17c02181304375659bf5e7e98bb920e.zip";
-      download_hash = "03ljpfc7wpmzb5b3f10k3017rqakxwbm01sh2fjxgawmbzw44fhn";
+      version = "0.11.15";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/14015d5a652c78b2041fd9668685573840530c306e414aabc0d3cebf95be0642.zip";
+      download_hash = "0hh6psavzknkq2mllhbf60656h1qay2qcrnr3w2b4y1ccmd5s08l";
       meta = with lib;
       {
-        description = "Allows using FSR for upscaling and frame generation in games with DLSS support. Uses DLSS Enabler and Optiscaler.";
+        description = "This plugin installs and manages OptiScaler, a tool that enhances upscaling and enables frame generation in a range of DirectX 12 games.";
         decky_tags = [ "DLSS" "Framegen" "FSR" "upscaling" ];
         platforms = platforms.all;
       };
@@ -978,9 +990,9 @@
     };
     "xivomega" = buildDeckyPlugin {
       name = "XIVOmega";
-      version = "0.2.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/dcc1a6b507c99cf299212e8cf919df92e883ddf3b845f24de5942e50cf2492ca.zip";
-      download_hash = "1jlj4k7m0bllwm6z4idqygfq7s4jvwczk31f46cz57690yssdhfw";
+      version = "1.0.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d2638cd2943eabd2c449234855acc91e92990826cae8516dbb6a624f99b57c81.zip";
+      download_hash = "10bwnnclyqkapdnm3s6a4q49k4hyr6n5aj13972d5aryjk98qqyj";
       meta = with lib;
       {
         description = "Latency Mitigator for the Critically Acclaimed MMORPG Final Fantasy XIV - based on XivMitmLatencyMitigator, XivAlexander and XivMitmDocker.";
@@ -996,9 +1008,9 @@
     };
     "decksp" = buildDeckyPlugin {
       name = "DeckSP";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a45def7332897a3790ba67f0777c9406e34bdfecdddf8a5b9588c151eb8ec915.zip";
-      download_hash = "05f9ivmm3hc8jmdqmpyxxkglpqq6jiy7gw37pa83fyl969ryypd4";
+      version = "1.1.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d6cbedcd64430e1f94a2b12caf936ba270f1ceafe77c6252808ff39c88640b40.zip";
+      download_hash = "0h0bcj49rwwgh1964z77mz7g2w52df9syb5ilaa1y3j3ck6yvjyn";
       meta = with lib;
       {
         description = "Full audio effects DSP. EQ, Reverb and much more. Per-game settings possible.";
@@ -1018,13 +1030,239 @@
     };
     "decky_ludusavi" = buildDeckyPlugin {
       name = "Decky Ludusavi";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/905caa1d314ee2dd0520da831d611e3aba3a183815ef278d2ba0183938400566.zip";
-      download_hash = "0rh580w3j6505f6jgvqm70c3mfis3rhiv0ys402xvqjf64fslp4h";
+      version = "1.2.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/8a69f45aadce763406b5c27bfef194761006d5e01c5e8841badeb13a27dd0d88.zip";
+      download_hash = "120dvlkkmcfyp90qhphww3ahc43njkqzwyy2nl338xnfmmdg8sca";
       meta = with lib;
       {
         description = "Ludusavi for Decky. Backup, restore, and keep multiple versions of your save files with ease! Requires Ludusavi installation on the device.";
         decky_tags = [ "backup" "cloud" "ludusavi" "sync" ];
+        platforms = platforms.all;
+      };
+    };
+    "game_sync" = buildDeckyPlugin {
+      name = "Game Sync";
+      version = "1.0.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a3e3750961775033387432ae98085b5de664679eb5a8209007bd67edc1a62f70.zip";
+      download_hash = "0w1glv0ysrxx0y821a5mkrkn9rjxbc49ibijfhw36l3pc44pbqx3";
+      meta = with lib;
+      {
+        description = "A fork of Decky Cloud Save that manages cloud saves and mods for games";
+        decky_tags = [ "backup" "cloud" "rclone" ];
+        platforms = platforms.all;
+      };
+    };
+    "wifi_locker" = buildDeckyPlugin {
+      name = "WiFi Locker";
+      version = "1.0.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4d892785ea5ebdc61e0584eb6c2a594344efd3ce657bbd1f000ba54971a080b6.zip";
+      download_hash = "1dl0l1qlk98b00gvsyv5rv9yyi23b4m6rsw40lgcdgayxa2jg2ad";
+      meta = with lib;
+      {
+        description = "Lock WiFi to a specific access point to prevent background scanning.";
+        decky_tags = [ "network" "root" "wifi" ];
+        platforms = platforms.all;
+      };
+    };
+    "letmereshade" = buildDeckyPlugin {
+      name = "LetMeReShade";
+      version = "1.8";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ae9cf06bb59aa5694409503828d341ae635bde5429a77c766b7256156c1ccc4f.zip";
+      download_hash = "0kyc3in1amkjddv7r9r9akg5nqxf879jhf2h1526k9csnmmz175f";
+      meta = with lib;
+      {
+        description = "ReShade plugin for Steam Deck - Enhanced version with improved shader and game management.";
+        decky_tags = [ "graphics" "presets" "reshade" "shaders" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_sunshine" = buildDeckyPlugin {
+      name = "Decky Sunshine";
+      version = "2025.10.27-dddf365";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/335285d75df623492a04bb1955f6f802075623de985f426d9baaaf0b100ed437.zip";
+      download_hash = "0dyl1q80pbxakdnl4pwqvqimc1q2z3v5a6dv0hm4j8znbpbqalik";
+      meta = with lib;
+      {
+        description = "Stream your Steam Deck screen to another device with minimal effort.";
+        decky_tags = [ "moonlight" "root" "server" "streaming" "sunshine" ];
+        platforms = platforms.all;
+      };
+    };
+    "huesync" = buildDeckyPlugin {
+      name = "HueSync";
+      version = "2.3.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/8a9cb1631b246a0438c4c2083b2829d6f9c195499a14f52c116ba695a92b21d0.zip";
+      download_hash = "1l115flrb9kb24nga54s96aw3yfn54l3n262qhw08si43div374a";
+      meta = with lib;
+      {
+        description = "LED controller for non-Steam Deck gaming handhelds running SteamOS.";
+        decky_tags = [ "root" ];
+        platforms = platforms.all;
+      };
+    };
+    "muradeck" = buildDeckyPlugin {
+      name = "MuraDeck";
+      version = "2.1.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/7957de906e9b6721631fc0cd9a48e9524c1d7bb4371dfb183c391dfdf6d416d4.zip";
+      download_hash = "1m0nskvgs79r7hcgn79pnixisk2jx549mkf03xij2rwvds8dwmvr";
+      meta = with lib;
+      {
+        description = "Adaptive mura correction, gamma correction, and dithering to fix mura effect ONLY FOR defective Samsung Panel for Steam Deck OLED.";
+        decky_tags = [
+          "mura"
+          "mura-correction"
+          "mura-deck"
+          "muradeck"
+          "mura-fix"
+          "oled"
+          "samsung"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "dimmer_deck" = buildDeckyPlugin {
+      name = "Dimmer Deck";
+      version = "0.0.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/cb4d9091e0e28277c9e79625323f0898481cb5590d0a7ab58f4d80696225a4fc.zip";
+      download_hash = "1z544mi6k02diyspl2hdb6siqj4q10zk49cnwz4pg0p2w28r0kfb";
+      meta = with lib;
+      {
+        description = "Make your brightness even dimmer.";
+        decky_tags = [ "brightness" "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "music_control" = buildDeckyPlugin {
+      name = "Music Control";
+      version = "1.1.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/3f56a3f56034b277ea74a2c37cc84133b69e382aa6bcb0b43876776aac737ed9.zip";
+      download_hash = "1nbyffn6lxvn72sb1g5658w9xdik8747rhx2fkm7gcilc3ss6miz";
+      meta = with lib;
+      {
+        description = "Quick access for media player controls in game mode.";
+        decky_tags = [ "media" "mpris" "music" ];
+        platforms = platforms.all;
+      };
+    };
+    "better_keyboard" = buildDeckyPlugin {
+      name = "Better Keyboard";
+      version = "0.3.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/880487209c3601c3464089136e2d16c8bb8dfb8b5680b91193ede010f0375a4d.zip";
+      download_hash = "0kas6zq11q7djc8vk02nigxqvfy82qnnw4w9813c609nkhh8f148";
+      meta = with lib;
+      {
+        description = "Better experience for physical keyboard users.";
+        decky_tags = [ "keyboard" "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_lsfg-vk" = buildDeckyPlugin {
+      name = "Decky LSFG-VK";
+      version = "0.12.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ec59fc8aceb4e1abe2066b3a0707ed6313cabc4421b7c17765397903e2f8fd26.zip";
+      download_hash = "09pxz3i06y9rcmvw3dr18jycl4v3xl3hffkb0viapqdlrs5gqngc";
+      meta = with lib;
+      {
+        description = "Enable lossless scaling frame generation on the Steam Deck using lsfg-vk compatibility layer.";
+        decky_tags = [
+          "framegen"
+          "installer"
+          "lossless"
+          "lsfg"
+          "scaling"
+          "vulkan"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "network_sentinel" = buildDeckyPlugin {
+      name = "Network Sentinel";
+      version = "1.0.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d3e07f40a0c800e72d15594e03c8c61e9bf3092524a578a0260520e735b971a5.zip";
+      download_hash = "19bip4syf8054sh7i9944l4z76qyqv406kjr2lnyf068l107zq6k";
+      meta = with lib;
+      {
+        description = "Monitor network quality and track connection performance with live ping display, latency graphs, and network history tracking.";
+        decky_tags = [ "gaming" "monitoring" "network" "performance" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_clash" = buildDeckyPlugin {
+      name = "Decky Clash";
+      version = "1.1.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/5f4a9094eea45711e87b3178960896fac3fe7c86ac2e4c32cf14763e3efe5fd8.zip";
+      download_hash = "1n2zzqz3wxhlrwr4qbmchrygxhzsjq49cy1iggl12mx4xsa90jjz";
+      meta = with lib;
+      {
+        description = "Light-weight Clash/Mihomo proxy client for Steam OS.";
+        decky_tags = [ "network" "root" ];
+        platforms = platforms.all;
+      };
+    };
+    "muon" = buildDeckyPlugin {
+      name = "Muon";
+      version = "0.2.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a7659c79b74110476cc4458cb10530cdcb2539fa11bc8c759038a080eaa81049.zip";
+      download_hash = "0j8hm3m8181qj1sqrg0iz8wjbjyd602v3325qin4f421nxwrqrd7";
+      meta = with lib;
+      {
+        description = "Ad-hoc WiFi networking plugin for Decky.";
+        decky_tags = [ "adhoc" "multiplayer" "p2p" "root" "wifi" ];
+        platforms = platforms.all;
+      };
+    };
+    "deckyparty_file_manager" = buildDeckyPlugin {
+      name = "DeckyParty File Manager";
+      version = "1.0.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/193fb3aa0446fbc3c6bae0ae15700b5f04acebfa917b8e1791988c6ce832dddf.zip";
+      download_hash = "1pyx6bl6r34qj4bqwywizbmsq12z1dq1bbp0pb3c7ys60jmb6gqr";
+      meta = with lib;
+      {
+        description = "Manage the deck's filesystem from a web browser via Copyparty!";
+        decky_tags = [
+          "control"
+          "files"
+          "fileserver"
+          "management"
+          "utility"
+          "web"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "speed_test" = buildDeckyPlugin {
+      name = "Speed Test";
+      version = "1.0.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/8b1ee429aece9330b83ea3fc2e7e27d007ac61a737169f20bda3f1a19ab95508.zip";
+      download_hash = "022mp6da3wd3plh9y5iplxhsq1yh4xz2xz537sw314yfmqly87lb";
+      meta = with lib;
+      {
+        description = "Run internet speed tests directly from your Steam Deck Game Mode using Cloudflare's global network.";
+        decky_tags = [ "network" "speed" "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_clipboard" = buildDeckyPlugin {
+      name = "Decky Clipboard";
+      version = "1.0.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d283bd9a5c35b3fac3788391736a6763f3e8c4615831a7c560c9fa6e6c0950ac.zip";
+      download_hash = "1b2h15n6xyn9c32sfcaqc72fiwv3cxm774c3g31zmcrmbjdbv0yj";
+      meta = with lib;
+      {
+        description = "Share clipboard between Steam Deck and other devices via web interface.";
+        decky_tags = [ "clipboard" "utility" "web" ];
+        platforms = platforms.all;
+      };
+    };
+    "reroll" = buildDeckyPlugin {
+      name = "Reroll";
+      version = "0.2.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/fb573890f5f87553893c08d6cb2fd8eaf87d54ce54383365e65e545634c55b3c.zip";
+      download_hash = "0g2vqls5cm2ywrjk6f2lrra7vy7av0pwpmh87j4m6xgqyn83hmzv";
+      meta = with lib;
+      {
+        description = "A high-performance memory scanning plugin for the Steam Deck. [WARNING: Strictly for offline/single-player use only. Use at your own risk.]";
+        decky_tags = [ "developer" "memory" "tools" "utility" ];
         platforms = platforms.all;
       };
     };
