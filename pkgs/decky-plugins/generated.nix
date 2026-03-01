@@ -209,9 +209,9 @@
     };
     "hltb_for_deck" = buildDeckyPlugin {
       name = "HLTB for Deck";
-      version = "2.0.6";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/dd56dd2f19be3df6541ab2c0fdcad099336d0740d57db9deb449c702b21f8113.zip";
-      download_hash = "04w13yr05is9nkgbjzfm803nscwrs35gvh5j39agcgdy34pxsmnx";
+      version = "2.0.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/71e6a0df5bc424f7f772f3f197f6236534bc30bb1e52ae52c394955bfdb69e13.zip";
+      download_hash = "04wynvymp5clqd9awlhypcqbqd354gv9gwgkfbvzf964bggs1rki";
       meta = with lib;
       {
         description = "A plugin to show you game lengths according to How Long To Beat";
@@ -497,12 +497,12 @@
     };
     "deckyfileserver" = buildDeckyPlugin {
       name = "DeckyFileServer";
-      version = "1.1.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/81c2a71d89e660ec56df8ac66569e813542aa91bf3c013ff13fea2ed058639e3.zip";
-      download_hash = "1qrrhq2yv8py2gzi7h7k3fljlm0kx1lnbilavxbfqq76i4fsghl1";
+      version = "1.2.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/7dc2ecdcd05aa415d1ac90afaff28ecb17f77809a2bc7a77aee8e92505b976f0.zip";
+      download_hash = "1w3np42jbsg8mrvpmg5215wgf5ybivrazbwhmk8ib92ss3ffrhkx";
       meta = with lib;
       {
-        description = "Plugin that lets you turn on a web server to browse and download files from your Steam Deck.";
+        description = "A simple on-demand web server that enables remote file browsing, downloads, and uploads via any web browser on the same network.";
         decky_tags = [ "root" ];
         platforms = platforms.all;
       };
@@ -533,9 +533,9 @@
     };
     "free_loader" = buildDeckyPlugin {
       name = "Free Loader";
-      version = "1.5.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/2c960746e8827b542a500eeb7f12e851335deabd0d3825ae5b71e7009b5ac5a9.zip";
-      download_hash = "1af5badh1rvibfp2af0dppm5scsix097zsqfa0m58yw2x130g5ic";
+      version = "1.5.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/3b1b5a58f30c04c881d8745d3e6f6c5b6dee52fa3550789aab2ae2874fbd3db9.zip";
+      download_hash = "1f9xpm7qgqiamfd7hl1mz99fwvavdipkwpblv20wh10cydc5l6rv";
       meta = with lib;
       {
         description = "Notifications for free games on Steam, GOG, and Epic Games!";
@@ -557,9 +557,9 @@
     };
     "syncthing" = buildDeckyPlugin {
       name = "Syncthing";
-      version = "0.2.6";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1424128571b59536909095146959acba3a36899a69e3d2d790f630f2c7bc607e.zip";
-      download_hash = "0zk0pk3z4c7nj3bx5qv9ka4kcfmsmicnj54mj283d5dmf62i490l";
+      version = "0.2.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/27e47379c280c92253d5533435f57c33b332b215f866d2ac4493daf18ec0d1c4.zip";
+      download_hash = "1i6iq27g3nlk8jnd4rpq2nr35crkgkskad2ksm9j5jc0q9wp7r17";
       meta = with lib;
       {
         description = "Plugin for managing Syncthing to synchronize files with other devices. Not officially affiliated with the Syncthing project.";
@@ -848,9 +848,9 @@
     };
     "playcount" = buildDeckyPlugin {
       name = "PlayCount";
-      version = "1.6";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4bdc954f68df1d70ddd87f39085d4e7c0f87ee24689536818ec3ca89b0298d0c.zip";
-      download_hash = "034d56q8kjn3is0kd5b84kp8f3vw9rfhhfbzv3fp07fzd17rbp2b";
+      version = "1.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d53d0b406d275312e9b6b586815b622c77a6657dfb75256441ba82337c4039b6.zip";
+      download_hash = "1dir81y370ms85j2axgvgmjscxrcc9dq31mmnvli4lr7dm00ngfm";
       meta = with lib;
       {
         description = "A Steam Deck plugin that shows current player counts for your steam games.";
@@ -1189,9 +1189,9 @@
     };
     "decky_clash" = buildDeckyPlugin {
       name = "Decky Clash";
-      version = "1.1.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/5f4a9094eea45711e87b3178960896fac3fe7c86ac2e4c32cf14763e3efe5fd8.zip";
-      download_hash = "1n2zzqz3wxhlrwr4qbmchrygxhzsjq49cy1iggl12mx4xsa90jjz";
+      version = "1.2.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/c7e246a6ffb104ed16d6a859069659c069ef233ffc2684a4c48151f53e13fcac.zip";
+      download_hash = "1b7w2czgalc1qjj889pw7wiyysf0b6b0cnd8sqbfs15izyk4dqn7";
       meta = with lib;
       {
         description = "Light-weight Clash/Mihomo proxy client for Steam OS.";
@@ -1263,6 +1263,103 @@
       {
         description = "A high-performance memory scanning plugin for the Steam Deck. [WARNING: Strictly for offline/single-player use only. Use at your own risk.]";
         decky_tags = [ "developer" "memory" "tools" "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "deckpass" = buildDeckyPlugin {
+      name = "DeckPass";
+      version = "1.1.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4be32fd39ce406e2276b21537c98afc00a8ed1b82a23ff0e01af552352fa48f8.zip";
+      download_hash = "1y28z9926mdg047gy8rap38qw2n0myc7qlr1dcky41p4kk9jzqsb";
+      meta = with lib;
+      {
+        description = "DeckPass is a Decky Plugin to access passwords directly in SteamOS gaming mode. Internally it uses KeePassXC.";
+        decky_tags = [
+          "clipboard"
+          "keepass"
+          "password"
+          "password-manager"
+          "utility"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "museck" = buildDeckyPlugin {
+      name = "Museck";
+      version = "0.0.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1bd8063a08a4e6439239fd44bf96851fdcce740ab3bf6293e295ee64a8768112.zip";
+      download_hash = "04l1fsl69vlmwa9n5gxk19scxp0zhnbbyi7x76947rm410x0dn0v";
+      meta = with lib;
+      {
+        description = "A Decky Loader plugin for Steam Deck to play tracks from Plex, Jellyfin, Emby, Navidrome, and Subsonic.";
+        decky_tags = [ "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "steam_status" = buildDeckyPlugin {
+      name = "Steam Status";
+      version = "1.2.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/9053308e04a74f44745b45b9f4f50af3673348d367e7b14bacc5677de707ac4e.zip";
+      download_hash = "0kmc0zkpsry5mi5v3rv7sd436rzk1bsz9fa5bds48kx70j730lwh";
+      meta = with lib;
+      {
+        description = "Display Steam Service status, player counts, and service health";
+        decky_tags = [ "monitoring" "status" "steam" ];
+        platforms = platforms.all;
+      };
+    };
+    "alarme" = buildDeckyPlugin {
+      name = "AlarMe";
+      version = "1.4.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/832fa3ccfb6735a0924f4f7c5727da270de296c0d868ca5ab620b7fbacdff68e.zip";
+      download_hash = "13pnvyngpdr0nrdcls6qq2bf4397v8kmfz2g9y9a0db7zg6a6bw3";
+      meta = with lib;
+      {
+        description = "Advanced alarm and timer with snooze, recurring alarms, Pomodoro mode, and persistent notifications.";
+        decky_tags = [
+          "alarm"
+          "clock"
+          "pomodoro"
+          "productivity"
+          "snooze"
+          "timer"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_localsend" = buildDeckyPlugin {
+      name = "Decky Localsend";
+      version = "0.4.5";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e271ccb55eb23f918b99a69f79aec905df4c9b2ef7b23bbf4ec1c2d1a6f0c6b7.zip";
+      download_hash = "1dy6y2kd3hn19szkpcpp5sdlrpq5r6p7k7x6k65r2gxjbsswqwg2";
+      meta = with lib;
+      {
+        description = "Use Localsend in gaming mode, including fast copy & paste screenshot and text by using LocalSend Client.";
+        decky_tags = [ "Clipboard" "localsend" "Screenshot" "Text" "transfer" ];
+        platforms = platforms.all;
+      };
+    };
+    "launch_options" = buildDeckyPlugin {
+      name = "Launch Options";
+      version = "1.8.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ba7b804e0efb4cb4f22c5e3df8165b2f20753426413090977d84c0638d64cdd7.zip";
+      download_hash = "1mydcj6n7h44gnbr0c214qs7a81gbcbghgay5krb8k7v1r780yxs";
+      meta = with lib;
+      {
+        description = "Manage launch options for your games with ease.";
+        decky_tags = [ "launch options" "quality of life" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky_translator" = buildDeckyPlugin {
+      name = "Decky Translator";
+      version = "0.8.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f7eb253db60633edef22f7a92f1ca3456a355cb035f859dd5336e21731046136.zip";
+      download_hash = "0dk10hqigqinagfmky1mn1f3asj5lcf2zagp4bpyscq6nqyjbszp";
+      meta = with lib;
+      {
+        description = "Translate anything on your screen to your language";
+        decky_tags = [ "Translation" ];
         platforms = platforms.all;
       };
     };
