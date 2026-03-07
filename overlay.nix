@@ -51,7 +51,6 @@ rec {
   jupiter-fan-control = final.callPackage ./pkgs/jupiter-fan-control { };
   powerbuttond = final.callPackage ./pkgs/powerbuttond { };
   steam_notif_daemon = final.callPackage ./pkgs/steam_notif_daemon { };
-  wakehook = final.callPackage ./pkgs/wakehook { };
 
   jupiter-hw-support = final.callPackage ./pkgs/jupiter-hw-support { };
   steamdeck-hw-theme = final.callPackage ./pkgs/jupiter-hw-support/theme.nix { };
@@ -68,7 +67,6 @@ rec {
   opensd = final.callPackage ./pkgs/opensd { };
 
   jovian-stubs = final.callPackage ./pkgs/jovian-stubs { };
-  jovian-greeter = final.callPackage ./pkgs/jovian-greeter { };
   jovian-steam-protocol-handler = final.callPackage ./pkgs/jovian-steam-protocol-handler { };
   jovian-updater-logo-helper = final.callPackage ./pkgs/jovian-updater-logo-helper { };
 
@@ -100,6 +98,9 @@ rec {
   steam = final.callPackage ./pkgs/steam-jupiter/fhsenv.nix {
     steam = prev.steam;
   };
+
+  cecd = final.callPackage ./pkgs/cecd { };
+  inputattach-cec-units = final.callPackage ./pkgs/inputattach-cec-units { };
 
   sdgyrodsu = final.callPackage ./pkgs/sdgyrodsu { };
 

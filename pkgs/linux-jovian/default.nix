@@ -3,9 +3,9 @@
 let
   inherit (lib) versions;
 
-  kernelVersion = "6.16.12";
-  vendorVersion = "valve9-jovian1";
-  hash = "sha256-kWOhRZx8vcN6ekpMj6VdJUYmLfxIy7ftiroh2Jq4Rz0=";
+  kernelVersion = "6.18.16";
+  vendorVersion = "valve1";
+  hash = "sha256-usW6nc27S3qWo/eTfMpB9XAh70565LDLKSxD4GeU+QE=";
 in
 buildLinux (args // rec {
   version = "${kernelVersion}-${vendorVersion}";
@@ -102,12 +102,14 @@ buildLinux (args // rec {
 
     LENOVO_WMI_GAMEZONE = module;
     LENOVO_WMI_TUNING = module;
-    LENOVO_LEGOS_HID = module;
+    # Jovian: renamed
+    # LENOVO_LEGOS_HID = module;
+    HID_LENOVO_GO = module;
+    HID_LENOVO_GO_S = module;
 
     ZOTAC_ZONE_HID = module;
     ZOTAC_ZONE_PLATFORM = module;
 
-    # Jovian: renamed
     HID_ASUS_ALLY = module;
     ASUS_ARMOURY = module;
     ASUS_WMI_DEPRECATED_ATTRS = yes;
@@ -127,7 +129,8 @@ buildLinux (args // rec {
     ZSWAP_DEFAULT_ON = yes;
 
     # Build as module to experiment with toggling
-    TCG_TPM = module;
+    # Jovian: NixOS pulls it in as y always
+    # TCG_TPM = module;
 
     # Per Colin at Quectel
     CFG80211_CERTIFICATION_ONUS = yes;
@@ -148,6 +151,9 @@ buildLinux (args // rec {
     # Jovian: renamed
     MITIGATION_CALL_DEPTH_TRACKING = no;
 
+    # Disable drm panic screen
+    DRM_PANIC = lib.mkForce no;
+
     # Xbox GIP driver
     JOYSTICK_XBOX_GIP = module;
     JOYSTICK_XBOX_GIP_FF = yes;
@@ -159,11 +165,14 @@ buildLinux (args // rec {
     # Jovian: fix fallout from the vendor-set options
     DRM_AMD_DC_SI = lib.mkForce (option no);
     DRM_HYPERV = lib.mkForce (option no);
+    DRM_PANIC_SCREEN = lib.mkForce (option no);
+    DRM_PANIC_SCREEN_QR_CODE = lib.mkForce (option no);
     FB_HYPERV = lib.mkForce (option no);
-    INTEL_TDX_GUEST = lib.mkForce (option no);
     HYPERV = lib.mkForce (option no);
+    INTEL_TDX_GUEST = lib.mkForce (option no);
     KVM_GUEST = lib.mkForce (option no);
     MOUSE_PS2_VMMOUSE = lib.mkForce (option no);
+    NOVA_CORE = lib.mkForce (option no);
     PARAVIRT_TIME_ACCOUNTING = lib.mkForce (option no);
     TDX_GUEST_DRIVER = lib.mkForce (option no);
   };
