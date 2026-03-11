@@ -42,6 +42,11 @@ Pointers to helpful pages
 <hr />
 </div>
 
+PS: Who am I and what does this fork does?
+--------------------------
+Hi reader :3. This is fork of regular Jovian with all its updates, but it allows declarative Decky Loader plguin setup.
+This commit was not made by me, I'm just forking it and mainting it with the main branch in the meantime until this get merged.
+
 Who are we?
 -----------
 
@@ -72,3 +77,4 @@ For other purposes, contact the developers via e-mail.
 For obfuscation, see these raw commits which contain the relevant e-mail address at the top:
 
  - [@samueldr (Samuel Dionne-Riel)](https://github.com/Jovian-Experiments/Jovian-NixOS/commit/af7041f1e92d6d4e1e04e6e4f9ec6e301d2b8e01.patch)
+
