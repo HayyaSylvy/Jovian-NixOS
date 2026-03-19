@@ -26,7 +26,7 @@ This repo is also useful for obtaining a Steam Deck-like experience on other `x8
 
 PS: Who am I and what does this fork does?
 --------------------------
-Hi reader :3. This is fork of regular Jovian with all its updates, but it allows declarative Decky Loader plguin setup.
+Hi reader :3. This is fork of regular Jovian with all its updates, but it allows declarative Decky Loader plugin setup.
 This commit was not made by me, I'm just keeping it up with the main branch until it gets merged.
 
 </div>
