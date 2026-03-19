@@ -42,7 +42,7 @@ avahi.ignore = true
 bluedevil.check = "1:6.4.3-2"
 
 # FIXME: has some not-yet-upstream patches, maybe we want them in nixpkgs?
-bluez.check = "5.83-1.2"
+bluez.check = "5.86-4.1"
 
 # more A/B stuff
 bmap-tools.ignore = true
@@ -81,6 +81,9 @@ dirlock.ignore = true
 
 # we don't need this
 dkms.ignore = true
+
+# foreground booster
+dmemcg-booster.map = true
 
 # non-critical
 # FIXME: package
@@ -184,6 +187,9 @@ jupiter-steamos-log-submitter.ignore = true
 # FIXME: what is this?
 jupiter-validation-tools.ignore = true
 
+# foreground booster
+kcgroups.check = "0.0.dmemcg.experimental.3-1"
+
 # security backport
 kdeconnect.check = "25.04.3-1.1"
 
@@ -256,7 +262,7 @@ lsb-release.ignore = true
 # packaging changes, removes a heavy dependency
 maliit-keyboard.check = "2.3.1-4.2"
 
-mangohud.check = "0.8.3.rc1.r18.g01b724d3-1"
+mangohud.check = "0.8.3.rc1.r24.g33c2c7dd-1"
 
 mesa = { map = "mesa-radeonsi-jupiter", pkgrel = "3", fixup = "mesa" }
 mesa-radv = { map = "mesa-radv-jupiter", pkgrel = "1", fixup = "mesa" }
@@ -319,7 +325,7 @@ rtkit.check = "0.14-1"
 # unused
 rtl88x2ce-dkms.ignore = true
 
-scx-scheds.check = "1.0.20.linux.steamos-1"
+scx-scheds.check = "1.1.0.linux.steamos-1"
 
 # FIXME: package this
 steam-im-modules.ignore = true
@@ -344,8 +350,8 @@ steamos-atomupd-client.ignore = true
 
 # applied as NixOS modules instead
 # check both to make sure we get the latest changes
-steamos-customizations-git.check = "20251010.1-2"
-steamos-customizations-jupiter.check = "20260223.1-1"
+steamos-customizations-git.check = "20260317.1-2"
+steamos-customizations-jupiter.check = "20260317.1-1"
 
 # devkit stuff
 steamos-devkit-service.ignore = true
@@ -402,9 +408,8 @@ upower.check = "1.90.10-1.1"
 # FIXME: package these
 usbhid-gadget-passthru.ignore = true
 
-# non-critical but would be nice to have
-# FIXME: package this
-vpower.ignore = true
+# more precise battery monitoring
+vpower.map = true
 
 # no longer used
 wakehook.ignore = true
