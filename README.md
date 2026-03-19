@@ -24,7 +24,10 @@ A set of packages and configurations for running NixOS on the [Steam Deck](https
 
 This repo is also useful for obtaining a Steam Deck-like experience on other `x86_64` devices.
 
-PS: This is a personal fork merging the experimental commits to add support for declarative Decky Loader plugin configuration. I'm pretty new and this is just a personal fork, please don't expect much :P
+PS: Who am I and what does this fork does?
+--------------------------
+Hi reader :3. This is fork of regular Jovian with all its updates, but it allows declarative Decky Loader plguin setup.
+This commit was not made by me, I'm just keeping it up with the main branch until it gets merged.
 
 </div>
 
@@ -41,11 +44,6 @@ Pointers to helpful pages
 <div class="for-github -unneeded">
 <hr />
 </div>
-
-PS: Who am I and what does this fork does?
---------------------------
-Hi reader :3. This is fork of regular Jovian with all its updates, but it allows declarative Decky Loader plguin setup.
-This commit was not made by me, I'm just forking it and mainting it with the main branch in the meantime until this get merged.
 
 Who are we?
 -----------
