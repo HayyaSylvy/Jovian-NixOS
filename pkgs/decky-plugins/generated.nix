@@ -1,5 +1,47 @@
 { buildDeckyPlugin, lib, stdenv, fetchurl, unzip }:
   {
+    "deck_progress_tracker" = buildDeckyPlugin {
+      name = "Deck Progress Tracker";
+      version = "1.3.6";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/784c59e7e2a344eb6803d00e341c7d5f10d42cea7b60cc4332f4c3687db14fb3.zip";
+      download_hash = "1csgn5ynihzl691wqq3vx8nd842zglf383nh0dlfni53wbkmjk3q";
+      meta = with lib;
+      {
+        description = "Automatic game tagging based on achievements, playtime, and completion time. Track your progress with visual badges in the Steam library. Features 5 intelligent tags: Mastered, Completed, Dropped, In Progress, and Backlog.";
+        decky_tags = [
+          "achievements"
+          "enhancement"
+          "library"
+          "progress-tracking"
+          "statistics"
+        ];
+        platforms = platforms.all;
+      };
+    };
+    "non-steam_badges" = buildDeckyPlugin {
+      name = "Non-Steam Badges";
+      version = "0.1.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/9c12b21fd02da12f4c37f9aab68d75172a11787d09c3478f15b4fc97e01df131.zip";
+      download_hash = "0cgi3ph9gz5l2n7lghq9gmw12ahpfn6vdapr6x62z89ds0gv44lw";
+      meta = with lib;
+      {
+        description = "A Decky plugin that helps identifying non-Steam games using themed badges";
+        decky_tags = [ "badges" "non-steam" "nonsteam" "ui" "utility" ];
+        platforms = platforms.all;
+      };
+    };
+    "suggestme" = buildDeckyPlugin {
+      name = "SuggestMe";
+      version = "1.5.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/248294b5d6b9d5a5d635ce35f4b5185ce59d4e4fd59353e24df4b29d74c2ade4.zip";
+      download_hash = "1r5dq9s9vcpl9pi574ym9x79vraw32sz8dff6pbabmdrsssr90i4";
+      meta = with lib;
+      {
+        description = "Smart game suggestion from your Steam library, native to Steam Deck.";
+        decky_tags = [ "game-library" "recommendations" "steam" "suggestion" ];
+        platforms = platforms.all;
+      };
+    };
     "download_all" = buildDeckyPlugin {
       name = "Download All";
       version = "1.0.0";
@@ -62,9 +104,9 @@
     };
     "launch_options" = buildDeckyPlugin {
       name = "Launch Options";
-      version = "1.8.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/ba7b804e0efb4cb4f22c5e3df8165b2f20753426413090977d84c0638d64cdd7.zip";
-      download_hash = "1mydcj6n7h44gnbr0c214qs7a81gbcbghgay5krb8k7v1r780yxs";
+      version = "1.9.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/381ac8b915402176cf768d1ccc1bc29a6b82ea9255675f0a30c0c81ea5427225.zip";
+      download_hash = "09bj8ajixj606055yrsmjbm84swsq8dwq74dfv7pc8a02nwwh6iq";
       meta = with lib;
       {
         description = "Manage launch options for your games with ease.";
@@ -361,9 +403,9 @@
     };
     "game_sync" = buildDeckyPlugin {
       name = "Game Sync";
-      version = "1.0.3";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1a8ebb9d37ac3ba0e7354d1670d19d7fd623e8d1eef4cc9b1ac3195df2931747.zip";
-      download_hash = "0iqpjgr5s6f33adwrx7fs7l27mkzkp8p05jd6pks0fxc6yfvp3hs";
+      version = "1.0.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/65e021ebb37d2ebfbfbe3dbc8af95aef9556cf484730362c6b26c4ecc3e62ccd.zip";
+      download_hash = "1k9cwv1yri16dcn3cc27937md5ggbbwqmg1xpszvybkxngmj3q35";
       meta = with lib;
       {
         description = "A fork of Decky Cloud Save that manages cloud saves and mods for games";
@@ -815,9 +857,9 @@
     };
     "playtime" = buildDeckyPlugin {
       name = "PlayTime";
-      version = "3.1.4";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e13e6bdb3a0908440f7646d17601673a5122ab194358cf448a52a70babdf34a9.zip";
-      download_hash = "1a9lvymhp9sji92cyn2336mj4l9scw0pdla6fq7l82097bdnngp1";
+      version = "3.2.5";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/10fc3beea48991c77cb02867e919b618d4cd6d5e9c6a6d0ccd5266c13214039f.zip";
+      download_hash = "17q32hrc2rjjrl66sslwbrnwvm0qnqcyjrr8n1ycg4c9lkp3pz0h";
       meta = with lib;
       {
         description = "Track time you spend gaming — whether it's Steam titles or non-Steam games. Daily, weekly, and all-time stats.";
@@ -930,9 +972,9 @@
     };
     "volume_boost" = buildDeckyPlugin {
       name = "Volume Boost";
-      version = "0.0.6";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d408afb057ed5320d2e7436ab9ccea235364f6117c7173df2f66daeb95e06749.zip";
-      download_hash = "0jb7w2aypnk65zgp6wbw27v68lr3xb6bjsj3wz920lzdayqay26l";
+      version = "0.0.7";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/2cc576a7f60751306d690268e227df626e59d3733680ced753de4c116629a9cc.zip";
+      download_hash = "1k5955k12k6yagbwx01nfg9mjvk2vwky4s02d5nk0l87yskpdi9c";
       meta = with lib;
       {
         description = "A Decky plugin to boost volume.";
@@ -1128,9 +1170,9 @@
     };
     "moondeck" = buildDeckyPlugin {
       name = "MoonDeck";
-      version = "1.11.2";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1013f416c1e72e967e781383defdeff0e56d4d1b75282edd75874fcce1a740af.zip";
-      download_hash = "1bs0lzhwqkw7fpfjwa3m3d6nvrghxzyxx0qkg1z9cbp7q4bg84qh";
+      version = "1.11.3";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/eaa73f19284d264357cd4f38223e0e9b4cc597e14a41e65a9a9a1710329750cd.zip";
+      download_hash = "1kahjwr105wsk9dfchaaw6bwak4v1qz24f2grmbl69jd50ckz9za";
       meta = with lib;
       {
         description = "MoonDeck lets you play any of your Steam games via Moonlight without needing to add them to Sunshine first, providing a similar experience to GeForce GameStream or Steam Remote Play.";
@@ -1194,9 +1236,9 @@
     };
     "hltb_for_deck" = buildDeckyPlugin {
       name = "HLTB for Deck";
-      version = "2.0.7";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/71e6a0df5bc424f7f772f3f197f6236534bc30bb1e52ae52c394955bfdb69e13.zip";
-      download_hash = "04wynvymp5clqd9awlhypcqbqd354gv9gwgkfbvzf964bggs1rki";
+      version = "2.0.8";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/cc64a3fc84b7800177dd5f49dc567fc591cc3a0a52da54ffd57d2fc81cb30993.zip";
+      download_hash = "14q9ncfchbvxspzm9njj18xcr4f5gxbdqjazvmvh305phkya6r6c";
       meta = with lib;
       {
         description = "A plugin to show you game lengths according to How Long To Beat";
@@ -1391,9 +1433,9 @@
     };
     "xr_gaming" = buildDeckyPlugin {
       name = "XR Gaming";
-      version = "1.4.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/42c41e14bb4c7a6f0c7eb9d1110c3ddc21c0419f58c1e2f2a5fe5ae1f3f05221.zip";
-      download_hash = "08ajy3ry2npylprf5haqkx0w08fw7l613ldrgq66yyjcpca1xi22";
+      version = "1.5.4";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/b51067199cb95f1d32271eb2a0c54a5eda71b1ab3bbc796f4eec01b6d51b6dd6.zip";
+      download_hash = "1mkd3gavc0gc9rppkg1vmfqp3njy9b2s1chy4wr1spxrkhcnf45m";
       meta = with lib;
       {
         description = "Virtual display, VR-Lite, and Follow modes for supported XR glasses";
