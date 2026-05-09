@@ -15,7 +15,6 @@ rec {
     kernelPatches = [
       kernelPatches.bridge_stp_helper
       kernelPatches.request_key_helper
-      kernelPatches.export-rt-sched-migrate
     ];
   };
 
@@ -58,7 +57,7 @@ rec {
   steamdeck-bios-fwupd = final.callPackage ./pkgs/jupiter-hw-support/bios-fwupd.nix { };
   jupiter-dock-updater-bin = final.callPackage ./pkgs/jupiter-dock-updater-bin { };
   steamos-manager = final.callPackage ./pkgs/steamos-manager { };
-  steamos-polkit-helpers = final.callPackage ./pkgs/jupiter-hw-support/polkit-helpers.nix { };
+  holo-polkit-helpers = final.callPackage ./pkgs/jupiter-hw-support/polkit-helpers.nix { };
   steamdeck-dsp = final.callPackage ./pkgs/steamdeck-dsp { };
   wireplumber-jupiter = final.callPackage ./pkgs/wireplumber {
     wireplumber' = prev.wireplumber;

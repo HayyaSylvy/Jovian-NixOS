@@ -10,19 +10,17 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "cecd";
-  version = "0.1.0";
+  version = "0.2.0";
 
   src = fetchFromGitLab {
     domain = "gitlab.steamos.cloud";
     owner = "holo";
     repo = "linux-cec";
-    # tag = "cecd-${finalAttrs.version}";
-    # Use the very next commit for now, to include the dbus config
-    rev = "d3aceb76811896c63a0f739d3059f4a426cf626d";
-    hash = "sha256-oPOCQwFSCkDEcd4MUz1gkX3n+M2R30YTEWW0o2thTds=";
+    tag = "cecd-${finalAttrs.version}";
+    hash = "sha256-zxFNeqjudwlwwOrnXEIyiAptQfbnjm56ruA1OS0d7CU=";
   };
 
-  cargoHash = "sha256-T3TSfinqm4ml5ncACFxmm5Bylnf09v/bWfIdtwe+bQw=";
+  cargoHash = "sha256-NGk3FpOmavFALv783i24zCXQiA6UtOFBy0zXTw7UBz0=";
 
   # tests assume FHS paths
   doCheck = false;

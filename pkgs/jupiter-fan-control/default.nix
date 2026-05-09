@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation(finalAttrs: {
   pname = "jupiter-fan-control";
-  version = "20240523.3";
+  version = "20260422.2";
 
   src = fetchFromGitHub {
     owner = "Jovian-Experiments";
     repo = "jupiter-fan-control";
     rev = finalAttrs.version;
-    hash = "sha256-dDNfmyatrseGlSAcH0aGgR0eSY5975LkjptTaW541Zw=";
+    hash = "sha256-U/Gu91UaczUCdG3RpFrmD67N3le8E+SHKIlwnSheHKE=";
   };
 
   buildInputs = [
@@ -25,7 +25,6 @@ stdenv.mkDerivation(finalAttrs: {
 
     mkdir -p $out/share
     cp -r usr/share/jupiter-fan-control $out/share
-    sed -i "s|/usr/share/|$out/share/|g" $out/share/jupiter-fan-control/fancontrol.py
 
     runHook postInstall
   '';
