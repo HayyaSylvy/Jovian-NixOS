@@ -3,9 +3,9 @@
 let
   inherit (lib) versions;
 
-  kernelVersion = "6.18.25";
+  kernelVersion = "6.18.33";
   vendorVersion = "valve1";
-  hash = "sha256-eNKBRqiZVQu07Iw+lpo03ol6glXMwy3NhtsuKHFfFkc=";
+  hash = "sha256-MkYCrIsOcuwnCaqrvwaRCN7LBW/mHOotEzl37zhSlzk=";
 in
 buildLinux (args // rec {
   version = "${kernelVersion}-${vendorVersion}";
@@ -114,7 +114,11 @@ buildLinux (args // rec {
     ASUS_ARMOURY = module;
     ASUS_WMI_DEPRECATED_ATTRS = yes;
 
+    #enable OneXPlayer HID driver
     HID_OXP = module;
+
+    # enable MSI Claw RGB controller driver
+    HID_MSI = module;
 
     # PARAVIRT options have overhead, even on bare metal boots. They can cause
     # spinlocks to not be inlined as well. Either way, we don't intend to run this
@@ -153,13 +157,13 @@ buildLinux (args // rec {
     # Jovian: renamed
     MITIGATION_CALL_DEPTH_TRACKING = no;
 
-    # Disable drm panic screen
-    DRM_PANIC = lib.mkForce no;
-
     # Xbox GIP driver
     JOYSTICK_XBOX_GIP = module;
     JOYSTICK_XBOX_GIP_FF = yes;
     JOYSTICK_XBOX_GIP_LEDS = yes;
+
+    # Disable drm panic screen
+    DRM_PANIC = lib.mkForce no;
 
     # Enable Valve LEDs driver
     LEDS_VALVE = module;
