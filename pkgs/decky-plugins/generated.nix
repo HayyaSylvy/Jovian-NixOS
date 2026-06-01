@@ -1,5 +1,49 @@
 { buildDeckyPlugin, lib, stdenv, fetchurl, unzip }:
   {
+    "decky_proton_launch" = buildDeckyPlugin {
+      name = "Decky Proton Launch";
+      version = "0.9.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e7b98a7ca8817ef08584ed0828eee8702631af33daccc229075a012eca91f731.zip";
+      download_hash = "0cgpj752w0as0wlw5k6s6fpk29khx3p2h27dhj2z0zl1m1y8mfg7";
+      meta = with lib;
+      {
+        description = "Manage Steam game launch options from Gaming Mode. Set Proton environment variables like PROTON_FSR4_UPGRADE=1 or PROTON_DLSS4_UPGRADE=1 and add wrappers such as MangoHud or GameScope.";
+        decky_tags = [ "command" "launch" "proton" ];
+        platforms = platforms.all;
+      };
+    };
+    "decky-clipper" = buildDeckyPlugin {
+      name = "Decky-Clipper";
+      version = "1.0.2";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/31d4d66032eb778140b96c0b27e53cb5e969395bca6ffc288b1fa283ecfb2401.zip";
+      download_hash = "0094zgn878hziclgqvyabcwnksdm7kjjf2vcp5082xzb69hddm1i";
+      meta = with lib;
+      {
+        description = "Record your screen even when a game is not running.";
+        decky_tags = [];
+        platforms = platforms.all;
+      };
+    };
+    "deck_shelves" = buildDeckyPlugin {
+      name = "Deck Shelves";
+      version = "2.0.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/b566280ad38fd3ecd584b5b46a855f301539eb9a86063834c64b7045f7063f91.zip";
+      download_hash = "149z0vvlaw2bqqs3h1l6kbmkj59hby2nmd5mhkayrlwgsc52hrmm";
+      meta = with lib;
+      {
+        description = "Inject configurable shelves (Collections / Tabs / Filters) into the Steam Deck Home (library/home).";
+        decky_tags = [
+          "collections"
+          "customization"
+          "filters"
+          "home"
+          "library"
+          "shelves"
+          "tabs"
+        ];
+        platforms = platforms.all;
+      };
+    };
     "deck_progress_tracker" = buildDeckyPlugin {
       name = "Deck Progress Tracker";
       version = "1.3.6";
@@ -44,9 +88,9 @@
     };
     "download_all" = buildDeckyPlugin {
       name = "Download All";
-      version = "1.0.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/286e62ab28eeb02918416fcccad0167076d1f395475dd3caf4ce33cbc94fecac.zip";
-      download_hash = "1b7c9z4wncyfyk5d6pa7jprx2xkh2v8cmk3g84c2kc7f52mn4vi8";
+      version = "1.1.0";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/0641231eec139e3231e7b5369d0dbacefd686b52e3f2fffb39384876881408da.zip";
+      download_hash = "1nh82j47cj1q77xzzwp3a9mnizffp86rsdmmwwqk57hkxhg26h86";
       meta = with lib;
       {
         description = "Download All - A plugin that let's the user immediately queue all scheduled downloads to immediately download.";
@@ -689,9 +733,9 @@
     };
     "magicpods" = buildDeckyPlugin {
       name = "MagicPods";
-      version = "2.0.14";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/d4a5b9d01d35838cb218a15409aa0797025f3cc9bd7edf89b54f22b155531c0f.zip";
-      download_hash = "03qwadav28jgnn4xyzmxr4y5y0lp0ym0jm5132r8r0rm3p8bk9fl";
+      version = "2.0.15";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/7799922e8ae4d9a119ade0f1fc562448e6c0ba78c1e9023508d97e80c5ebc7ee.zip";
+      download_hash = "1vn7xg2q0znr10sh5sf1g2xc1rj84ibgrwg0mlcs3ng4i8p956bp";
       meta = with lib;
       {
         description = "Monitor the battery level of your AirPods, Beats and Galaxy Buds. Easily switch between noise cancellation modes and enjoy the magic.";
@@ -1077,18 +1121,6 @@
         platforms = platforms.all;
       };
     };
-    "decky_recorder" = buildDeckyPlugin {
-      name = "Decky Recorder";
-      version = "0.4.1";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/299d3c60442b0701db6e8c26b5daa7a88dbd7dd0cfa28012fe734f4def2b5363.zip";
-      download_hash = "0qsk5gplskvkzq9818ngs1yvv3d8lzdba9lcdvdh21rb8ih3r799";
-      meta = with lib;
-      {
-        description = "Record your games with Decky Recorder";
-        decky_tags = [ "Capture" ];
-        platforms = platforms.all;
-      };
-    };
     "deckmtp" = buildDeckyPlugin {
       name = "DeckMTP";
       version = "1.0.5";
@@ -1236,9 +1268,9 @@
     };
     "hltb_for_deck" = buildDeckyPlugin {
       name = "HLTB for Deck";
-      version = "2.0.8";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/cc64a3fc84b7800177dd5f49dc567fc591cc3a0a52da54ffd57d2fc81cb30993.zip";
-      download_hash = "14q9ncfchbvxspzm9njj18xcr4f5gxbdqjazvmvh305phkya6r6c";
+      version = "2.0.9";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/a5547a4ad99a6d63d475476396359a4f89fc8aacdf1e9deca0015d9f4ab9751d.zip";
+      download_hash = "07bmp559yp81l3n9s7nzmj5gr2agk8srcqs7fpa66vcsv557lm55";
       meta = with lib;
       {
         description = "A plugin to show you game lengths according to How Long To Beat";
@@ -1315,9 +1347,9 @@
     };
     "bluetooth" = buildDeckyPlugin {
       name = "Bluetooth";
-      version = "2.3.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/5dfb17176edb7b1699e0d6d336ee0b3b1571d41ee7c7fd3fbbd93c4537d84ef6.zip";
-      download_hash = "1xjfv0vlag6rpczzviz73va7259v1gp3dlynw2cicyyvdqbigysx";
+      version = "2.3.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/20308728f974289f4da13733d8abf9d938e4569b3db8586d3467b2aed747b35a.zip";
+      download_hash = "0nmk8zbsxck76inmif1xkdbf8f6rz6mxhcrpl56rya3lz4l8fc10";
       meta = with lib;
       {
         description = "Quickly connect to your already paired bluetooth devices.";
