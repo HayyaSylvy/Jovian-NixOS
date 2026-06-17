@@ -6,13 +6,13 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "vpower";
-  version = "1.5.7";
+  version = "1.6.1";
 
   src = fetchFromGitHub {
     owner = "Jovian-Experiments";
     repo = "vpower";
     tag = finalAttrs.version;
-    hash = "sha256-GmDyi/PSuxWsCAs3mVCBJu/6dEzTlkgGKXzBe4r+xvk=";
+    hash = "sha256-68rtpV/8w/6MvsI4FpXjky0TZqvrxAI3lrPPglufglk=";
   };
 
   postPatch = ''
@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       --replace-fail /usr/lib/vpower $out/bin/vpower
   '';
 
-  cargoHash = "sha256-mk02dEOYY1FWOU/77UomxZH6s6NZieO6j8v7/MXV6MQ=";
+  cargoHash = "sha256-OWR1n12KvD+h1HKng/3ghdolOTvjwb+qszuokawYpSg=";
 
   buildInputs = [
     lm_sensors
