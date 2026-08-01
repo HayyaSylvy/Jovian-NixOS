@@ -980,9 +980,9 @@
     };
     "tabmaster" = buildDeckyPlugin {
       name = "TabMaster";
-      version = "2.15.0";
-      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/bd77e1b8b97da1603e36f3fd8d91caf3b48932a353ffbaca3e91749dc266328f.zip";
-      download_hash = "13rjcv19sx4i7v5bmzsklcr8kd7kra8qvzgk6qz618bxp6wf2xxx";
+      version = "2.15.1";
+      url = "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e08333859a32b0c177b8e9a7959c5eeeafe38f946578f7f1d161c721f0e05da5.zip";
+      download_hash = "19axw3q23iv1s7qzfy35jj7y7bzfbsf9b9z9p1vw3c1jka2k70z0";
       meta = with lib;
       {
         description = "Gives you full control over your Steam library! Support for customizing, adding, and hiding Library Tabs.";
