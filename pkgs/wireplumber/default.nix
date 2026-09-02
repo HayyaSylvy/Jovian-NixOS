@@ -1,11 +1,11 @@
 { wireplumber', fetchFromGitHub }:
 wireplumber'.overrideAttrs(_: {
-  version = "0.5.14-1.5";
+  version = "0.5.15-1.2";
 
   src = fetchFromGitHub {
     owner = "Jovian-Experiments";
     repo = "wireplumber";
-    rev = "0.5.14-jupiter1.5";
-    hash = "sha256-QztDvERePROv0G7KoqUvcOlSm7tKUseyM51MBbI/6k4=";
+    rev = "0.5.15-jupiter1.2";
+    hash = "sha256-jgrGBN4GtRmEUvAWHY7WESgvQKvZNsfXuT35EJ+qUWc=";
   };
 })

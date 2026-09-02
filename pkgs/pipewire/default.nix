@@ -1,11 +1,11 @@
 { pipewire', fetchFromGitHub }:
 pipewire'.overrideAttrs (_: {
-  version = "1.6.4-1.8";
+  version = "1.6.8-1.4";
 
   src = fetchFromGitHub {
     owner = "Jovian-Experiments";
     repo = "pipewire";
-    rev = "1.6.4-jupiter1.8";
-    hash = "sha256-aj4L84Fz4PB+sSjHvrGUT6EOm/JmlERhNVRw5HFxMUA=";
+    rev = "1.6.8-jupiter1.4";
+    hash = "sha256-1Z9OI/2RZNefyMsCh8y60X2NhVkeYo/YjQO5x2HXnJU=";
   };
 })
